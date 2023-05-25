@@ -10,6 +10,7 @@
     <modules>
         <module>e-commence-common</module>
         <module>e-commence-mvc-config</module>
+        <module>e-commonce-alibaba-nacos-client</module>
     </modules>
 
     <packaging>pom</packaging>

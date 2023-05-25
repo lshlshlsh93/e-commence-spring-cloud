@@ -13,7 +13,7 @@
 
     <artifactId>e-commence-mvc-config</artifactId>
 
-    <name>e-commence-common</name>
+    <name>e-commence-mvc-config</name>
     <description>mvc config modules</description>
     <developers>
         <developer>

@@ -1,0 +1,26 @@
+server:
+  port: 8000 # 端口号
+  servlet:
+    context-path: /ecommence-nacos-client
+spring:
+  profiles:
+    active: dev
+  application:
+    name: e-commence-nacos-client    # 应用名，是构成 Nacos 配置管理 dataId字段的一部分
+  cloud:
+    nacos:
+      discovery: # 注册中心
+        namespace: e2f95cf6-4dfa-47a5-ad5a-88d8b1f9ad92
+        server-addr: 127.0.0.1:8848 # 单机
+#        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850 # 集群
+        enabled: true
+#        ip: 10.22.155.232  #指定本服务所在ip，避免多网卡导致服务注册的ip不一致，导致服务之间网络不通
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
